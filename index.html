@@ -81,77 +81,131 @@ button{
 <script>
 
 // ================= REPORT DATABASE =================
-
 const REPORTS = {
 
-  "dailyreport":{
-    link:"https://1drv.ms/x/c/bccc0999596dc156/IQBHOK6GqW8_SoMFQkwjOT0zAQFEP2JOPU_XBiK6mOGGCdU",
-    password:"ae@123"
-  },
+"dailyreport":{
+title:"Aero Eagle Prayagraj – Daily Report",
+link:"https://1drv.ms/x/c/bccc0999596dc156/IQBHOK6GqW8_SoMFQkwjOT0zAQFEP2JOPU_XBiK6mOGGCdU",
+password:"ae@123"
+},
 
-  "dailyinspection":{
-    link:"https://1drv.ms/x/c/bccc0999596dc156/IQBAGGR50zOHTo_y9tr8OcgtAc_ORVlB0vnzbejGwZKjS6k",
-    password:"ae@123"
-  },
+"dailyinspection":{
+title:"Aero Eagle Prayagraj – Daily Inspection Report",
+link:"https://1drv.ms/x/c/bccc0999596dc156/IQBAGGR50zOHTo_y9tr8OcgtAc_ORVlB0vnzbejGwZKjS6k",
+password:"ae@123"
+},
 
-  "tendays":{
-    link:"https://1drv.ms/x/c/bccc0999596dc156/IQDHcHdW5QrpQo4TfeM6YZl1ARVwKgSEchmVcBVtVyU7bno",
-    password:"ae@123"
-  },
+"tendays":{
+title:"Aero Eagle Prayagraj – 10 Days Maintenance Report",
+link:"https://1drv.ms/x/c/bccc0999596dc156/IQDHcHdW5QrpQo4TfeM6YZl1ARVwKgSEchmVcBVtVyU7bno",
+password:"ae@123"
+},
 
-  "air":{
-    link:"https://1drv.ms/x/c/bccc0999596dc156/IQD7fiDA8mXLRpnpFP03yS9GAWdoWChzWy7w6NvIyhm8AnY",
-    password:"ae@123"
-  },
+"air":{
+title:"Aero Eagle Prayagraj – Accident Investigation Report",
+link:"https://1drv.ms/x/c/bccc0999596dc156/IQD7fiDA8mXLRpnpFP03yS9GAWdoWChzWy7w6NvIyhm8AnY",
+password:"ae@123"
+},
 
-  "hvsystem":{
-    link:"https://1drv.ms/x/c/bccc0999596dc156/IQDEmcyaicP1ToHP9o9cxxS6Afvyzg5wS1kKpNAdceZQGcU",
-    password:"ae@123"
-  },
+"hvsystem":{
+title:"Aero Eagle Prayagraj – HV System Inspection Report",
+link:"https://1drv.ms/x/c/bccc0999596dc156/IQDEmcyaicP1ToHP9o9cxxS6Afvyzg5wS1kKpNAdceZQGcU",
+password:"ae@123"
+},
 
-  "ae.dailyreport":{
+"ae.dailyreport":{
+  title:"Aero Eagle Prayagraj – Daily Report",
     link:"https://1drv.ms/x/c/bccc0999596dc156/IQBHOK6GqW8_SoMFQkwjOT0zATu9gRL0rox4GbQPIIqkTHs",
     password:"ae@321"
   },
 
   "ae.dailyinspection":{
+    title:"Aero Eagle Prayagraj – Daily Inspection Report",
     link:"https://1drv.ms/x/c/bccc0999596dc156/IQBAGGR50zOHTo_y9tr8OcgtAXqWJq8CaJzo7kkKb2OsDbM",
     password:"ae@321"
   },
 
   "ae.tendays":{
+    title:"Aero Eagle Prayagraj – 10 Days Maintenance Report",
     link:"https://1drv.ms/x/c/bccc0999596dc156/IQDHcHdW5QrpQo4TfeM6YZl1AUgQc-lpAXup2qJYyQSIXBA",
     password:"ae@321"
   },
 
   "ae.air":{
+    title:"Aero Eagle Prayagraj – Accident Investigation Report",
     link:"https://1drv.ms/x/c/bccc0999596dc156/IQD7fiDA8mXLRpnpFP03yS9GAfHVcgDAhkxOVk852IBrXbU",
     password:"ae@321"
   },
 
   "ae.hvsystem":{
+    title:"Aero Eagle Prayagraj – HV System Inspection Report",
     link:"https://1drv.ms/x/c/bccc0999596dc156/IQDEmcyaicP1ToHP9o9cxxS6Aadw3bOyZJPTvJuXewX2MSY",
     password:"ae@321"
   }
-
 };
+// const REPORTS = {
+//   "dailyreport":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQBHOK6GqW8_SoMFQkwjOT0zAQFEP2JOPU_XBiK6mOGGCdU",
+//     password:"ae@123"
+//   },
+
+//   "dailyinspection":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQBAGGR50zOHTo_y9tr8OcgtAc_ORVlB0vnzbejGwZKjS6k",
+//     password:"ae@123"
+//   },
+
+//   "tendays":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQDHcHdW5QrpQo4TfeM6YZl1ARVwKgSEchmVcBVtVyU7bno",
+//     password:"ae@123"
+//   },
+
+//   "air":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQD7fiDA8mXLRpnpFP03yS9GAWdoWChzWy7w6NvIyhm8AnY",
+//     password:"ae@123"
+//   },
+
+//   "hvsystem":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQDEmcyaicP1ToHP9o9cxxS6Afvyzg5wS1kKpNAdceZQGcU",
+//     password:"ae@123"
+//   },
+
+//   "ae.dailyreport":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQBHOK6GqW8_SoMFQkwjOT0zATu9gRL0rox4GbQPIIqkTHs",
+//     password:"ae@321"
+//   },
+
+//   "ae.dailyinspection":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQBAGGR50zOHTo_y9tr8OcgtAXqWJq8CaJzo7kkKb2OsDbM",
+//     password:"ae@321"
+//   },
+
+//   "ae.tendays":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQDHcHdW5QrpQo4TfeM6YZl1AUgQc-lpAXup2qJYyQSIXBA",
+//     password:"ae@321"
+//   },
+
+//   "ae.air":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQD7fiDA8mXLRpnpFP03yS9GAfHVcgDAhkxOVk852IBrXbU",
+//     password:"ae@321"
+//   },
+
+//   "ae.hvsystem":{
+//     link:"https://1drv.ms/x/c/bccc0999596dc156/IQDEmcyaicP1ToHP9o9cxxS6Aadw3bOyZJPTvJuXewX2MSY",
+//     password:"ae@321"
+//   }
+
+// };
 
 
-// ================= GET REPORT KEY =================
+// ================= GET REPORT KEY FROM URL PATH =================
 
-const params = new URLSearchParams(window.location.search);
-const key = params.get("r");
+const pathParts = window.location.pathname.split("/");
+const key = pathParts[pathParts.length - 1];
 
 
 // ================= PAGE VALIDATION =================
 
-if(!key){
-
-document.getElementById("message").innerHTML="No report specified";
-document.getElementById("password").style.display="none";
-
-}
-else if(!REPORTS[key]){
+if(!REPORTS[key]){
 
 document.getElementById("message").innerHTML="Invalid report link";
 document.getElementById("password").style.display="none";
@@ -191,12 +245,7 @@ function togglePassword(){
 
 let field=document.getElementById("password");
 
-if(field.type==="password"){
-field.type="text";
-}
-else{
-field.type="password";
-}
+field.type = field.type === "password" ? "text" : "password";
 
 }
 
