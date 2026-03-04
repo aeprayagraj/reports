@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
 <script>
-location.replace("/reports/");
+
+const path = window.location.pathname.split("/").pop();
+
+window.location.replace("/reports/?r=" + path);
+
 </script>
+</head>
+</html>
